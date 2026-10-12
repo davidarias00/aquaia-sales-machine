@@ -84,16 +84,22 @@ Los mismos del formulario de la web, más lo que necesita para agendar: nombre �
 área que más tiempo consume (ventas y atención, contabilidad, finanzas, operaciones, RR.HH. o «no sé
 todavía») · el proceso que más tiempo les quita · quién decide.
 
+## Decisiones de David (12/10/2026)
+
+- **Caso: solo Dreams Can Bloom.** Es el único cliente; el agente puede contarlo, sin inventar otros
+  ni cifras que no estén verificadas.
+- **Precios: nunca.** Los proyectos varían mucho; el precio se da en el diagnóstico.
+- **Países:** se arranca en Colombia, pero se atiende a toda Latinoamérica. Para otros países el
+  agente ofrece horarios en la zona horaria del cliente.
+- **Reuniones:** siempre David; Roberto puede estar. La disponibilidad es la de David.
+- **Tamaño de empresa:** hay que calificarlo. Propuesta en discusión: empresa constituida que haya
+  vendido al menos $1.000 millones el año pasado. Ver la calificación cuando quede decidida.
+
 ## Vacíos: el agente NO puede inventar esto
 
-- **Casos y resultados.** La web no tiene clientes, testimonios ni cifras. El agente no cita casos ni
-  porcentajes de ahorro.
-- **Rangos de precio** del montaje y de la mensualidad.
-- **Qué NO hace AquaIA** (desarrollo a la medida sin IA, apps móviles, soporte de sistemas,
-  empresas de qué tamaño…).
+- **Cifras de resultados.** Ningún porcentaje de ahorro que no esté medido.
+- **Qué NO hace AquaIA** (desarrollo a la medida sin IA, apps móviles, soporte de sistemas…).
 - **Horario de atención** de las personas.
-- **Países**: ¿se atienden empresas fuera de Colombia?
-- **Quién da las reuniones** (¿David solo?).
 
 ## Inconsistencias a revisar en la web
 
