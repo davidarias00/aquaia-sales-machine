@@ -95,6 +95,17 @@ todavía») · el proceso que más tiempo les quita · quién decide.
 - **Tamaño de empresa:** hay que calificarlo. Propuesta en discusión: empresa constituida que haya
   vendido al menos $1.000 millones el año pasado. Ver la calificación cuando quede decidida.
 
+## El caso de Dreams Can Bloom (borrador: falta que David lo apruebe)
+
+Lo que Luna puede contar, sin cifras hasta que David las apruebe:
+
+> Dreams Can Bloom es una finca de flores orgánicas en Antioquia que vende por WhatsApp. Le montamos
+> un agente de ventas que atiende a los clientes a cualquier hora: muestra el catálogo con fotos,
+> toma el pedido, cobra con link de pago y confirma el pago solo después de verificarlo con la
+> pasarela, deja el pedido en la hoja de rutas de entrega y avisa al equipo cuando un cliente
+> necesita una persona. Además manda las campañas de WhatsApp a su base de clientes y filtra
+> candidatos para sus vacantes.
+
 ## Vacíos: el agente NO puede inventar esto
 
 - **Cifras de resultados.** Ningún porcentaje de ahorro que no esté medido.
