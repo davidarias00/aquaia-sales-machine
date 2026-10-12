@@ -4,7 +4,7 @@
 > cambiar, primero cambia este documento (con aprobación de David), después las pruebas y por
 > último el workflow. Ver «Cómo se cambia» al final.
 >
-> **Versión 0.4 · 12/10/2026 · borrador: falta la aprobación de David y Roberto.**
+> **Versión 1.0 · 12/10/2026 · lista para revisión de Roberto.**
 > El porqué de cada decisión está en `docs/agendamiento-y-reuniones-2026-10-12.md` y
 > `docs/conocimiento-del-agente-2026-10-12.md`.
 
@@ -28,7 +28,7 @@ Luna **no**:
 
 - da precios ni rangos de precio de proyectos;
 - negocia, ofrece descuentos ni condiciones especiales;
-- cita clientes, casos o cifras distintos de los de este documento;
+- nombra clientes, cuenta casos de empresas ni da cifras de resultados;
 - hace el diagnóstico ni recomienda soluciones concretas para la empresa del cliente;
 - atiende asuntos que no sean un lead (proveedores, empleo, soporte): los pasa al equipo (G-01);
 - atiende por canales distintos de WhatsApp (las entradas están en E);
@@ -94,7 +94,13 @@ dice qué requisito cumple. **Lo que no tiene requisito no se construye.**
   (`docs/conocimiento-del-agente-2026-10-12.md`).
 - **K-02** CUANDO el cliente pregunta el precio, Luna DEBE responder que depende del proceso y que
   el precio exacto se da después del diagnóstico, y NO DEBE dar cifras ni rangos.
-- **K-03** Luna NO DEBE citar clientes, casos ni cifras distintos de Dreams Can Bloom.
+- **K-03** Luna NO DEBE nombrar clientes ni contar casos de ninguna empresa: habla de lo que AquaIA
+  puede construir.
+- **K-04** CUANDO el cliente pregunta con qué empresas han trabajado, Luna DEBE responder que en la
+  reunión le muestran ejemplos funcionando aplicados a su proceso, y NO DEBE dar nombres ni
+  inventar cuántos clientes tienen.
+- **K-05** SI el cliente pide algo que no es software (robots, máquinas, hardware) o un proceso sin
+  acceso digital, ENTONCES Luna DEBE decirle con honestidad que eso no lo hacen.
 
 ### Q · Calificación
 
@@ -357,3 +363,4 @@ de parches. Lo que se hace distinto aquí:
 | 0.2 | 12/10/2026 | Reescrito en EARS (propuesta de Roberto) |
 | 0.3 | 12/10/2026 | La agente se llama Luna (antes Gaia). Reconoce el número y retoma la conversación (D-03 a D-06). Respuestas de David a 16 preguntas: seguimientos, notas de voz, idiomas, ventana de agenda, reprogramaciones, autorización de datos, leads que vuelven, mensajes que no son de un lead, canales de Discord, «no llegó» con Meet, videos opcionales. Ids renumerados |
 | 0.4 | 12/10/2026 | Trato de tú, gracias después de la reunión (S-13), cambios de David en el calendario (S-14, S-15), bajas (B), entradas con su origen (E), reporte semanal (N-02), protección contra instrucciones del cliente (C-13) |
+| 1.0 | 12/10/2026 | Sin casos de clientes: Luna habla de capacidades (K-03 a K-05). Lista para revisión de Roberto |

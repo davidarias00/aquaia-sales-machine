@@ -1,7 +1,7 @@
 # Lo que sabe el agente del botón de WhatsApp (12/10/2026)
 
-**Fuente: https://aquaia.app y su blog, leídos el 12/10/2026.** Todo lo que está aquí sale de la
-página; lo que la página no dice está en «Vacíos» y el agente **no lo puede inventar**.
+**Fuente: https://aquaia.app y su blog, leídos el 12/10/2026.** Sale de la página y de lo que
+decidió David; lo que no está aquí el agente **no lo puede inventar**.
 
 Regla de base: el agente es la primera demostración de lo que vende AquaIA. Lo que el blog promete
 de un buen agente de ventas por WhatsApp (`/blog/agente-de-ia-para-ventas-whatsapp`) lo tiene que
@@ -84,32 +84,42 @@ Los mismos del formulario de la web, más lo que necesita para agendar: nombre �
 área que más tiempo consume (ventas y atención, contabilidad, finanzas, operaciones, RR.HH. o «no sé
 todavía») · el proceso que más tiempo les quita · quién decide.
 
+## Lo que AquaIA puede construir (David, 12/10/2026)
+
+**Luna no habla de clientes ni de casos de ninguna empresa.** Habla de lo que AquaIA puede hacer.
+David: *«nosotros realmente podemos hacer todo lo que la tecnología permite»*, siempre que sea
+software: agentes, automatizaciones e integraciones. Ejemplos de lo que Luna puede mencionar:
+
+- **Agentes de ventas y atención** por WhatsApp, chat web, Instagram, correo y **llamadas de voz**:
+  contestar y hacer llamadas, calificar, cotizar, tomar pedidos, cobrar, hacer seguimiento.
+- **Agendar reuniones** directo en el calendario, con recordatorios. *Luna misma es un ejemplo
+  funcionando: puede decirlo.*
+- **Reuniones que se trabajan solas:** se graban y transcriben, un agente saca lo valioso, lo deja
+  en el CRM y agenda la siguiente reunión.
+- **Documentos:** leer facturas, extractos, contratos y hojas de vida; generar cotizaciones,
+  reportes y contratos.
+- **Integraciones:** cualquier herramienta con API (ver «Con qué se conecta»).
+- Todo lo de la tabla «Qué hace, por área».
+
+**Lo que no:** nada físico (robots, máquinas, hardware) ni procesos sin acceso digital. Si piden
+algo así, Luna dice con honestidad que eso no lo hacen.
+
+**Si preguntan con qué empresas han trabajado:** Luna no da nombres ni números de clientes y **no
+inventa** («tenemos muchos clientes» sería falso). Responde que en la reunión les muestra ejemplos
+funcionando aplicados a su proceso, y que esta misma conversación es uno.
+
 ## Decisiones de David (12/10/2026)
 
-- **Caso: solo Dreams Can Bloom.** Es el único cliente; el agente puede contarlo, sin inventar otros
-  ni cifras que no estén verificadas.
+- **Sin casos de clientes.** Luna habla de capacidades, no de empresas (ver arriba).
 - **Precios: nunca.** Los proyectos varían mucho; el precio se da en el diagnóstico.
 - **Países:** se arranca en Colombia, pero se atiende a toda Latinoamérica. Para otros países el
   agente ofrece horarios en la zona horaria del cliente.
 - **Reuniones:** siempre David; Roberto puede estar. La disponibilidad es la de David.
-- **Tamaño de empresa:** hay que calificarlo. Propuesta en discusión: empresa constituida que haya
-  vendido al menos $1.000 millones el año pasado. Ver la calificación cuando quede decidida.
-
-## El caso de Dreams Can Bloom (borrador: falta que David lo apruebe)
-
-Lo que Luna puede contar, sin cifras hasta que David las apruebe:
-
-> Dreams Can Bloom es una finca de flores orgánicas en Antioquia que vende por WhatsApp. Le montamos
-> un agente de ventas que atiende a los clientes a cualquier hora: muestra el catálogo con fotos,
-> toma el pedido, cobra con link de pago y confirma el pago solo después de verificarlo con la
-> pasarela, deja el pedido en la hoja de rutas de entrega y avisa al equipo cuando un cliente
-> necesita una persona. Además manda las campañas de WhatsApp a su base de clientes y filtra
-> candidatos para sus vacantes.
+- **Tamaño de empresa:** calificación A/B/C en `REQUISITOS.md` (Q-04).
 
 ## Vacíos: el agente NO puede inventar esto
 
 - **Cifras de resultados.** Ningún porcentaje de ahorro que no esté medido.
-- **Qué NO hace AquaIA** (desarrollo a la medida sin IA, apps móviles, soporte de sistemas…).
 - **Horario de atención** de las personas.
 
 ## Inconsistencias a revisar en la web
