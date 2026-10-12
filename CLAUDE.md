@@ -13,11 +13,11 @@ las califica y agenda una reunión de diagnóstico con David. n8n + Chatwoot + S
 
 - **Requisitos primero.** No se construye nada que no esté en `REQUISITOS.md`. Si un arreglo no
   corresponde a ningún requisito, falta un requisito: se propone a David, se escribe y después se
-  construye. Cada cambio de workflow y cada prueba citan el id del requisito (`A-06`, `Q-04`…).
+  construye. Los requisitos se escriben en EARS (ver `REQUISITOS.md`). Cada cambio de workflow y cada prueba citan el id del requisito (`A-08`, `Q-04`…).
 - **El modelo conversa y extrae; el código decide** (clase, lead caliente, horarios, eventos,
   confirmaciones). No metas reglas de negocio en el prompt.
 - **Nunca confirmes al cliente algo que no se hizo**: «agendado» solo después de que el evento
-  existe y se verificó (A-06).
+  existe y se verificó (A-08).
 - **n8n es compartido con Dreams Can Bloom.** Por ahora se usa la misma llave de API.
   - Todo workflow de AquaIA se llama `AquaIA · …` y lleva la etiqueta `aquaia`.
   - **Nunca leas para modificar, actualices, desactives ni borres un workflow que no empiece por
