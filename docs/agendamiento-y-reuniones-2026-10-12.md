@@ -82,6 +82,61 @@ Para empezar bastan 2 videos grabados una vez.
   marketing las plantillas que sonaban a promoción y las cobró más caro. El «gratis por ahora» va en
   la conversación, no en las plantillas. Una plantilla puede llevar video en el encabezado.
 
+### 6. Calendario: los espacios los abre David
+
+- **David marca en su calendario los bloques en los que se le puede agendar** (por ejemplo, un evento
+  repetido «AquaIA · disponible» de 2:00 a 5:00 p. m.). La agente solo ofrece horarios **dentro de
+  esos bloques** y que además estén **libres** en el calendario real de David.
+- Hay que unificar calendarios: el calendario real de David comparte su disponibilidad (solo
+  libre/ocupado basta) con el Gmail de AquaIA. Si está en el Workspace de DCB, el administrador tiene
+  que permitir compartir afuera al menos libre/ocupado.
+- La reunión se crea en el calendario de AquaIA e invita al correo de David (y opcionalmente al de
+  Roberto) y al del lead. Así queda bloqueada también en el calendario real de David.
+
+### 7. Calificación A / B / C (aprobada por David)
+
+Va **después** de que el cliente contó qué le duele y **antes** de ofrecer horarios, con un porqué
+(«para que el diagnóstico salga a la medida de tu empresa») y con **listas de opciones**, no con un
+número exacto.
+
+| Pregunta | Opciones |
+|---|---|
+| ¿Cuántas personas trabajan en la empresa? | 1–5 · 6–20 · 21–50 · Más de 50 |
+| ¿En qué rango de ventas estuvieron el año pasado? | Menos de $500M · $500M–$1.000M · $1.000M–$5.000M · Más de $5.000M · Prefiero no decir |
+
+| Clase | Criterio | Qué hace la agente |
+|---|---|---|
+| **A** | Ventas de $1.000M o más, o más de 20 personas | Agenda. Si además es caliente, avisa en Discord |
+| **B** | $500M–$1.000M, de 6 a 20 personas, o «prefiero no decir» | Agenda igual, marcada B: David decide si la mantiene |
+| **C** | Menos de $500M y 5 personas o menos, o no está constituida | No agenda. Cierra con contenido del blog y deja la puerta abierta |
+
+- Los cortes viven en configuración; se ajustan con los primeros 20–30 leads reales. Fuera de
+  Colombia, los rangos van en dólares (el corte de $1.000M son unos USD 250.000).
+- Se pide nombre de la empresa y NIT. Más adelante se puede verificar contra el RUES.
+
+### 8. Urgencia y quién decide
+
+No se pregunta «¿qué tan urgente es?»: todo el mundo dice «mucho». Se pregunta por **el momento**:
+
+1. **Por qué ahora** (abierta, justo después del dolor): «¿Pasó algo que los hizo buscar esto ahora?».
+   Una razón concreta (creció el volumen, se va alguien, errores que costaron) es la mejor señal.
+2. **Para cuándo** (lista): «¿Para cuándo quisieran tener esto andando?» → Lo antes posible · En
+   los próximos 3 meses · Estamos explorando.
+3. **Quién decide**, sin preguntarlo de frente: «Además de ti, ¿quién más participa en la decisión?».
+   Sirve también para invitar a esa persona a la reunión.
+
+**Lead caliente** (aviso en Discord) = clase A **y** («lo antes posible» o «próximos 3 meses») **y**
+habla quien decide o participa en la decisión. También cuando pide hablar con una persona.
+
+En total la agente hace pocas preguntas: dolor, por qué ahora, para cuándo, personas, ventas, quién
+decide y correo. Nunca todas seguidas: se intercalan con lo que el cliente cuenta.
+
+### 9. La ficha de prediagnóstico
+
+Al agendar, a David le llega (y queda en el CRM) una ficha: fecha y hora · clase · empresa, ciudad,
+personas, rango de ventas · quién habla y si decide · qué le duele · por qué ahora · para cuándo ·
+herramientas que usan.
+
 ## Reglas que vienen de la máquina de DCB
 
 - **Nunca decir «agendado» antes de que el evento exista.** Primero se crea el evento en el
