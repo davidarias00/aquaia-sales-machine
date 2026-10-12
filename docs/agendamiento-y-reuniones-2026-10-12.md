@@ -155,4 +155,8 @@ herramientas que usan.
 - Qué sabe el agente de AquaIA: qué hacen, qué no hacen, casos. Falta el material (portafolio,
   propuesta de ejemplo, transcripción de una reunión).
 - Nombre del Gmail dedicado.
+- **David unifica sus calendarios** (tarea de David): hoy tiene eventos en el calendario del iPhone
+  (iCloud) y otros en Google. La agente solo ve Google. Lo más simple: agregar la cuenta de Google
+  en el iPhone, ponerla como calendario predeterminado y pasar a Google lo que esté en iCloud.
+- David crea los bloques «AquaIA · disponible» y comparte libre/ocupado con el Gmail de AquaIA.
 - Grabar los 2 videos.
