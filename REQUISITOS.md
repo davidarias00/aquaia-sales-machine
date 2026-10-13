@@ -4,7 +4,7 @@
 > cambiar, primero cambia este documento (con aprobación de David), después las pruebas y por
 > último el workflow. Ver «Cómo se cambia» al final.
 >
-> **Versión 1.8 · 13/10/2026 · lista para revisión de Roberto.**
+> **Versión 2.0 · 13/10/2026 · versión para revisión de Roberto.**
 > El porqué de cada decisión está en `docs/agendamiento-y-reuniones-2026-10-12.md` y
 > `docs/conocimiento-del-agente-2026-10-12.md`.
 
@@ -192,6 +192,9 @@ dice qué requisito cumple. **Lo que no tiene requisito no se construye.**
   confirmarlo solo después de verificarlo (como A-09) y avisar en `#agenda`.
 - **A-15** SI el lead ya reprogramó `max_reprogramaciones` veces, ENTONCES Luna NO DEBE reprogramar
   sola: DEBE avisar en `#agenda` y decirle al cliente que alguien del equipo le escribe.
+- **A-16** Luna DEBE contar como reprogramación cada vez que el cliente pide cambiar la reunión (A-14
+  o el botón **Necesito cambiar**) y cada vez que el cliente no llegó y se le ofrecen horarios nuevos
+  (S-09), y NO DEBE contar los cambios que hace David en el calendario (S-14, S-15).
 
 ### S · Secuencia hasta la reunión
 
@@ -226,6 +229,9 @@ dice qué requisito cumple. **Lo que no tiene requisito no se construye.**
   hora, y mover los recordatorios.
 - **S-15** CUANDO David borra la reunión del calendario, Luna DEBE escribirle al lead disculpándose,
   ofrecerle horarios nuevos y avisar en `#agenda`.
+- **S-16** CUANDO es el día de una reunión a las `hora_prebriefing`, Luna DEBE mandar a `#agenda` el
+  pre-briefing de cada reunión del día: la ficha (S-02), un resumen de la conversación, si confirmó o
+  no, y el link a la conversación en Chatwoot.
 
 ### G · Mensajes que no son de un lead
 
@@ -297,15 +303,27 @@ Cada entrada lleva un código de origen que se guarda con el lead (D-01).
   Laura! La última vez hablábamos de la facturación…»).
 - **D-06** SI pasaron más de `vigencia_datos` desde el último mensaje, ENTONCES Luna DEBE confirmar
   con el cliente que los datos de su empresa siguen igual antes de agendar.
+- **D-07** Luna DEBE guardar los leads en Postgres, que es la fuente de verdad.
+- **D-08** CUANDO se crea un lead o cambia algo de él (datos, clase, estado, reunión), Luna DEBE
+  actualizar su fila en la hoja «Leads AquaIA» de Google Drive.
+- **D-09** La hoja DEBE tener dos pestañas:
+  - **Leads**: una fila por lead, con fecha del primer contacto, nombre, empresa, ciudad y país,
+    origen, clase, estado, personas, rango de ventas, qué le duele, por qué ahora, para cuándo, quién
+    decide, fecha y hora de la reunión, idioma, si confirmó, link a la conversación en Chatwoot;
+  - **Agenda**: solo las reuniones que vienen, ordenadas por fecha, para ver la semana de un vistazo.
+- **D-10** La hoja es solo para ver: Luna NO DEBE leer datos de la hoja para decidir nada. Lo que se
+  cambie a mano en la hoja no cambia a Luna.
+- **D-11** SI actualizar la hoja falla, ENTONCES Luna DEBE seguir trabajando con Postgres, avisar en
+  `#fallos` y volver a intentarlo, y NO DEBE detener la conversación con el cliente.
 
 ### N · Avisos en Discord
 
 | Canal | Qué llega |
 |---|---|
 | `#lead-caliente` | H-01 · C-09 |
-| `#agenda` | S-02 (ficha) · A-14, A-15 · S-06 «sin confirmar» · S-09 «no llegó» · S-15 · B-04 |
+| `#agenda` | S-02 (ficha) · S-16 (pre-briefing del día) · A-14, A-15 · S-06 «sin confirmar» · S-09 «no llegó» · S-15 · B-04 |
 | `#otros-mensajes` | G-01 · G-03 · C-07 · Q-06a · Q-08 · E-05 |
-| `#fallos` | A-10 y cualquier error de un workflow |
+| `#fallos` | A-10 · D-11 y cualquier error de un workflow |
 | `#reporte` | N-02 |
 
 - **N-01** Luna DEBE mandar cada aviso solo al canal que le corresponde según esta tabla.
@@ -340,6 +358,8 @@ Valores que cambian **sin tocar la lógica** (una tabla en la base):
 | `vigencia_datos` | 90 días |
 | `plazo_diagnostico` | 3 días hábiles |
 | `hora_reporte` | 8:00 a. m. (Colombia) |
+| `hora_prebriefing` | 7:30 a. m. (Colombia) |
+| `hoja_leads` | la hoja «Leads AquaIA» en el Drive de AquaIA |
 | `video_confirmacion` | (vacío hasta que David lo grabe) |
 | `video_aviso_previo` | (vacío hasta que David lo grabe) |
 
@@ -347,7 +367,7 @@ Valores que cambian **sin tocar la lógica** (una tabla en la base):
 
 - **S-09 y S-10:** David va a usar una cuenta de Google que permita saber quién se conectó a Meet.
   Hay que verificar qué plan de Google lo permite antes de construir esos dos requisitos.
-- Nombre del Gmail o cuenta de Google de AquaIA.
+- Nombre del Gmail o cuenta de Google de AquaIA (también es donde vive la hoja de D-08).
 
 ## Cómo está construido (para que no se vuelva un parche)
 
@@ -393,3 +413,4 @@ de parches. Lo que se hace distinto aquí:
 | 1.6 | 13/10/2026 | Luna se presenta solo con su nombre (C-01); si le preguntan, dice que es una IA (C-01a) |
 | 1.7 | 13/10/2026 | La reunión puede ser en español o en inglés (C-03, C-03a) |
 | 1.8 | 13/10/2026 | Sin personas ni ventas no hay reunión (Q-05, Q-06, Q-06a): se corrige la contradicción entre los dos |
+| 2.0 | 13/10/2026 | Hoja de leads en Drive (D-07 a D-11), pre-briefing del día en Discord (S-16), qué cuenta como reprogramación (A-16). Versión para Roberto |

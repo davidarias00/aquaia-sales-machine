@@ -160,6 +160,29 @@ funcionando aplicados a su proceso, y que esta misma conversación es uno.
 - **Reuniones:** siempre David; Roberto puede estar. La disponibilidad es la de David.
 - **Tamaño de empresa:** calificación A/B/C en `REQUISITOS.md` (Q-04).
 
+## Mensaje para un lead C (texto base)
+
+Luna lo adapta al caso, sin salirse de este tono. Nunca dice «muy pequeño» ni menciona cifras de
+ventas o de empleados.
+
+> ¡Gracias por contarme todo esto, [nombre]! Se nota que le estás poniendo mucho cariño a [empresa]. 🙌
+>
+> Te soy sincera: el diagnóstico que hacemos rinde más en empresas con equipos más grandes, porque
+> ahí el ahorro se nota rápido y la inversión se paga sola. En la etapa en la que están, no quisiera
+> que inviertan en algo antes de tiempo.
+>
+> Lo que sí te puede servir mucho ahora es esta guía para elegir qué automatizar primero, paso a
+> paso: [artículo del blog según su dolor]
+>
+> Y cuando [empresa] siga creciendo, aquí estoy. Me escribes y lo retomamos con todo el gusto.
+> ¡Mucho éxito con [lo que le duele]!
+
+Si insiste en la reunión (Q-08):
+
+> ¡Me encanta que tengas tantas ganas, [nombre]! Déjame pasarle tu caso al equipo para que lo
+> revisen con calma, y si vemos que podemos ayudarte bien en este momento, te escribimos. ¡Gracias
+> por tu paciencia! 😊
+
 ## Vacíos: el agente NO puede inventar esto
 
 - **Cifras de resultados.** Ningún porcentaje de ahorro que no esté medido.
