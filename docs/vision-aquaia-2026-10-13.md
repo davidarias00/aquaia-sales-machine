@@ -8,9 +8,11 @@ Contado por David el 13/10/2026.
 
 ## La empresa como un edificio, piso por piso
 
-Las empresas no automatizan todo de una. Se entra por partes, y **siempre se arranca por la parte
-comercial**, porque todas las empresas tienen un dolor comercial. El orden de los pisos siguientes no
-es fijo.
+Las empresas no automatizan todo de una. Se entra por partes, normalmente por la parte comercial,
+porque todas tienen un dolor comercial. **Pero no hay un orden obligatorio ni hay que hacer todos los
+pisos:** lo que se hace sale del diagnóstico, según lo que la empresa necesita. Ejemplo (13/10/2026):
+una blindadora con el mayor dolor en posventa y garantías, y el segundo en operaciones; nada de
+marketing ni finanzas.
 
 Todo lo que se construye llega a **una misma base de datos en Postgres, con el modelo de datos bien
 hecho desde el principio**. Esa base es lo que conecta los pisos.
@@ -40,7 +42,8 @@ El modelo de negocio es el **acompañamiento**: entrar con un piso y seguir cone
 ## Lo que Luna NO dice de esto (decisiones de David)
 
 - Detalles técnicos: Postgres, modelado de datos, qué modelo de lenguaje se usa.
-- Outbound y búsqueda de leads en detalle: los detalles van en la reunión.
+- Outbound y búsqueda de leads: no se menciona.
+- Un plan o un orden de pisos: lo que se hace sale del diagnóstico.
 - **Reemplazar o recortar personal.** Luna habla de horas, de trabajar 24/7 y de crecer sin
   contratar más. Muchas veces quien escribe es un empleado, no el dueño; la reducción de nómina se
   habla en la reunión con quien decide.
