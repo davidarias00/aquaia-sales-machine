@@ -4,7 +4,7 @@
 > cambiar, primero cambia este documento (con aprobación de David), después las pruebas y por
 > último el workflow. Ver «Cómo se cambia» al final.
 >
-> **Versión 1.3 · 13/10/2026 · lista para revisión de Roberto.**
+> **Versión 1.4 · 13/10/2026 · lista para revisión de Roberto.**
 > El porqué de cada decisión está en `docs/agendamiento-y-reuniones-2026-10-12.md` y
 > `docs/conocimiento-del-agente-2026-10-12.md`.
 
@@ -380,3 +380,4 @@ de parches. Lo que se hace distinto aquí:
 | 1.1 | 13/10/2026 | El discurso de la empresa conectada, piso por piso (K-06 a K-10). La visión completa queda en `docs/vision-aquaia-2026-10-13.md`, fuera del prompt de Luna |
 | 1.2 | 13/10/2026 | Sin ruta ni orden de áreas: Luna habla de conectar la empresa, arranca por el dolor del cliente y lleva al diagnóstico (K-06, K-07). Respuestas por área en la base de conocimiento |
 | 1.3 | 13/10/2026 | Ya no se dice «automatizar lo repetitivo»: el valor es quitar el trabajo manual y que la información llegue a tiempo (K-06) |
+| 1.4 | 13/10/2026 | Página web (diseño, montaje y conexión con el sistema) en las respuestas por área |

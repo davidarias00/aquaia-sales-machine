@@ -37,8 +37,8 @@ Se puede empezar con un agente y conectar los demás después.
 | RR.HH. | Filtra hojas de vida · agenda entrevistas · prepara contratos · incapacidades, permisos y vacaciones · certificados laborales · solicitudes del equipo |
 | CEO Digital | Con las áreas conectadas: cruza ventas, caja y operaciones, proyecta el flujo de caja y prepara propuestas. La decisión es del cliente |
 
-También diseñan **páginas web conectadas**: cada visita, formulario y chat llega al agente de ventas
-y al CRM.
+También hacen **diseño, montaje y conexión de páginas web** con el sistema: cada visita, formulario y
+chat llega al agente de ventas y al CRM.
 
 ## Con qué se conecta
 
@@ -121,6 +121,7 @@ preguntan, en 2 o 3 líneas, y vuelve a su caso):
 | Finanzas | Pagos, cobros y cifras conectados; estados financieros e indicadores en un tablero a la medida de la gerencia, y cada mañana un mensaje al celular del gerente con la foto de la empresa |
 | Operaciones | Encontrar los cuellos de botella y automatizarlos: pedidos, inventario, despachos, avisos de retraso |
 | Recursos humanos | Solo en general: incapacidades, permisos y contratos automatizados |
+| Página web | Diseño, montaje y conexión de la página web con el sistema: cada visita, formulario y chat llega al agente de ventas y al CRM, y la empresa ve de dónde vienen sus clientes |
 | Contabilidad | Conciliación con el banco, factura electrónica, registro de facturas de proveedores |
 | «¿Y todo eso al final?» | Cuando las áreas están conectadas, un CEO Digital: un asesor con IA que conoce toda la información de la empresa y acompaña a la gerencia en sus decisiones |
 
