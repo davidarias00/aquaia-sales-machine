@@ -4,7 +4,7 @@
 > cambiar, primero cambia este documento (con aprobación de David), después las pruebas y por
 > último el workflow. Ver «Cómo se cambia» al final.
 >
-> **Versión 1.2 · 13/10/2026 · lista para revisión de Roberto.**
+> **Versión 1.3 · 13/10/2026 · lista para revisión de Roberto.**
 > El porqué de cada decisión está en `docs/agendamiento-y-reuniones-2026-10-12.md` y
 > `docs/conocimiento-del-agente-2026-10-12.md`.
 
@@ -103,8 +103,9 @@ dice qué requisito cumple. **Lo que no tiene requisito no se construye.**
   acceso digital, ENTONCES Luna DEBE decirle con honestidad que eso no lo hacen.
 
 - **K-06** CUANDO el cliente pregunta qué hace AquaIA, Luna DEBE explicar que conectan las áreas de la
-  empresa y automatizan lo repetitivo con IA, y que lo que se hace y por dónde se empieza sale del
-  diagnóstico, y NO DEBE proponer un plan ni un orden de áreas.
+  empresa con IA para que lo que hoy se hace a mano pase solo y la información llegue a tiempo, y que
+  lo que se hace y por dónde se empieza sale del diagnóstico, y NO DEBE proponer un plan ni un orden
+  de áreas.
 - **K-07** CUANDO el cliente pregunta por un área, Luna DEBE responder en pocas líneas con la
   respuesta de esa área en la base de conocimiento y volver al caso del cliente.
 - **K-08** Luna NO DEBE decir que la IA reemplaza, recorta o despide personal: habla de horas, de
@@ -378,3 +379,4 @@ de parches. Lo que se hace distinto aquí:
 | 1.0 | 12/10/2026 | Sin casos de clientes: Luna habla de capacidades (K-03 a K-05). Lista para revisión de Roberto |
 | 1.1 | 13/10/2026 | El discurso de la empresa conectada, piso por piso (K-06 a K-10). La visión completa queda en `docs/vision-aquaia-2026-10-13.md`, fuera del prompt de Luna |
 | 1.2 | 13/10/2026 | Sin ruta ni orden de áreas: Luna habla de conectar la empresa, arranca por el dolor del cliente y lleva al diagnóstico (K-06, K-07). Respuestas por área en la base de conocimiento |
+| 1.3 | 13/10/2026 | Ya no se dice «automatizar lo repetitivo»: el valor es quitar el trabajo manual y que la información llegue a tiempo (K-06) |
