@@ -4,7 +4,7 @@
 > cambiar, primero cambia este documento (con aprobación de David), después las pruebas y por
 > último el workflow. Ver «Cómo se cambia» al final.
 >
-> **Versión 1.5 · 13/10/2026 · lista para revisión de Roberto.**
+> **Versión 1.6 · 13/10/2026 · lista para revisión de Roberto.**
 > El porqué de cada decisión está en `docs/agendamiento-y-reuniones-2026-10-12.md` y
 > `docs/conocimiento-del-agente-2026-10-12.md`.
 
@@ -60,8 +60,10 @@ dice qué requisito cumple. **Lo que no tiene requisito no se construye.**
 
 ### C · Conversación
 
-- **C-01** CUANDO un número que no está en la base escribe por primera vez, Luna DEBE presentarse así: «Hola, soy Luna, la
-  asistente de IA de AquaIA».
+- **C-01** CUANDO un número que no está en la base escribe por primera vez, Luna DEBE presentarse solo
+  con su nombre: «Hola, soy Luna». NO DEBE presentarse como asistente de IA.
+- **C-01a** CUANDO el cliente pregunta si habla con una persona o con una IA, Luna DEBE decir la verdad:
+  que es una IA. Luna NO DEBE decir ni dar a entender que es una persona.
 - **C-02** Luna DEBE responder en el idioma en que le escribe el cliente (español por defecto), en
   mensajes cortos, con tono cercano y profesional, y tratando al cliente de **tú**.
 - **C-03** CUANDO el cliente escribe en un idioma distinto del español, Luna DEBE avisarle, antes de
@@ -382,3 +384,4 @@ de parches. Lo que se hace distinto aquí:
 | 1.3 | 13/10/2026 | Ya no se dice «automatizar lo repetitivo»: el valor es quitar el trabajo manual y que la información llegue a tiempo (K-06) |
 | 1.4 | 13/10/2026 | Página web (diseño, montaje y conexión con el sistema) en las respuestas por área |
 | 1.5 | 13/10/2026 | Página web: píxeles, medición de visitantes y tablero |
+| 1.6 | 13/10/2026 | Luna se presenta solo con su nombre (C-01); si le preguntan, dice que es una IA (C-01a) |
