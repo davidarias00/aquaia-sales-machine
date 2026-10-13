@@ -4,7 +4,7 @@
 > cambiar, primero cambia este documento (con aprobación de David), después las pruebas y por
 > último el workflow. Ver «Cómo se cambia» al final.
 >
-> **Versión 1.6 · 13/10/2026 · lista para revisión de Roberto.**
+> **Versión 1.7 · 13/10/2026 · lista para revisión de Roberto.**
 > El porqué de cada decisión está en `docs/agendamiento-y-reuniones-2026-10-12.md` y
 > `docs/conocimiento-del-agente-2026-10-12.md`.
 
@@ -66,8 +66,11 @@ dice qué requisito cumple. **Lo que no tiene requisito no se construye.**
   que es una IA. Luna NO DEBE decir ni dar a entender que es una persona.
 - **C-02** Luna DEBE responder en el idioma en que le escribe el cliente (español por defecto), en
   mensajes cortos, con tono cercano y profesional, y tratando al cliente de **tú**.
-- **C-03** CUANDO el cliente escribe en un idioma distinto del español, Luna DEBE avisarle, antes de
-  agendar, que la reunión es en `idioma_reunion`.
+- **C-03** CUANDO el cliente escribe en inglés, Luna DEBE ofrecerle la reunión en inglés y guardar el
+  idioma en el evento y en la ficha.
+- **C-03a** CUANDO el cliente escribe en un idioma que no está en `idiomas_reunion`, Luna DEBE
+  avisarle, antes de agendar, que la reunión puede ser en español o en inglés, y preguntarle cuál
+  prefiere.
 - **C-04** CUANDO llegan varios mensajes del mismo cliente con menos de `espera_rafaga` segundos
   entre ellos, Luna DEBE responder una sola vez, a todos juntos.
 - **C-05** CUANDO el cliente manda una nota de voz, Luna DEBE transcribirla y tratarla como texto.
@@ -193,7 +196,7 @@ dice qué requisito cumple. **Lo que no tiene requisito no se construye.**
   Meet, y la invitación a que venga quien maneja el proceso.
 - **S-02** CUANDO se agenda una reunión, Luna DEBE mandar a `#agenda` y guardar en la base la ficha
   de prediagnóstico: fecha y hora, clase, empresa, ciudad, personas, rango de ventas, quién habla y
-  si decide, qué le duele, por qué ahora, para cuándo, herramientas que usan.
+  si decide, qué le duele, por qué ahora, para cuándo, herramientas que usan, idioma de la reunión.
 - **S-03** CUANDO faltan 24 horas para la reunión, Luna DEBE mandar la plantilla de recordatorio con
   los botones **Confirmo** y **Necesito cambiar**.
 - **S-04** SI la reunión se agendó con menos de 24 horas de anticipación, ENTONCES Luna NO DEBE
@@ -325,7 +328,7 @@ Valores que cambian **sin tocar la lógica** (una tabla en la base):
 | `opciones_de_horario` | 3 |
 | `max_reprogramaciones` | 2 |
 | `invitar_roberto` | no |
-| `idioma_reunion` | español |
+| `idiomas_reunion` | español, inglés |
 | `espera_rafaga` | 5 segundos |
 | `seguimiento_1` | 4 horas |
 | `seguimiento_2` | 24 horas |
@@ -385,3 +388,4 @@ de parches. Lo que se hace distinto aquí:
 | 1.4 | 13/10/2026 | Página web (diseño, montaje y conexión con el sistema) en las respuestas por área |
 | 1.5 | 13/10/2026 | Página web: píxeles, medición de visitantes y tablero |
 | 1.6 | 13/10/2026 | Luna se presenta solo con su nombre (C-01); si le preguntan, dice que es una IA (C-01a) |
+| 1.7 | 13/10/2026 | La reunión puede ser en español o en inglés (C-03, C-03a) |
