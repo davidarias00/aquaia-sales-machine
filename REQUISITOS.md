@@ -4,7 +4,7 @@
 > cambiar, primero cambia este documento (con aprobación de David), después las pruebas y por
 > último el workflow. Ver «Cómo se cambia» al final.
 >
-> **Versión 1.7 · 13/10/2026 · lista para revisión de Roberto.**
+> **Versión 1.8 · 13/10/2026 · lista para revisión de Roberto.**
 > El porqué de cada decisión está en `docs/agendamiento-y-reuniones-2026-10-12.md` y
 > `docs/conocimiento-del-agente-2026-10-12.md`.
 
@@ -136,12 +136,15 @@ dice qué requisito cumple. **Lo que no tiene requisito no se construye.**
   |---|---|
   | A | ventas ≥ `corte_a_ventas` **o** personas > `corte_a_personas` |
   | C | (ventas < `corte_c_ventas` **y** personas ≤ `corte_c_personas`) **o** no está constituida |
-  | B | todo lo demás, incluido «prefiero no decir» |
+  | B | todo lo demás, incluido «prefiero no decir» en ventas cuando sí dio personas |
 
-- **Q-05** CUANDO el cliente pide agendar sin responder las preguntas, Luna DEBE agendarlo si tiene
-  el proceso que le duele y al menos uno de personas o ventas, y preguntar lo que falte después de
-  agendar.
-- **Q-06** SI el cliente no da ni personas ni ventas, ENTONCES Luna DEBE clasificarlo como B.
+- **Q-05** CUANDO el cliente pide agendar sin responder las preguntas, Luna DEBE agendarlo solo si
+  tiene el proceso que le duele y al menos uno de personas o ventas, y preguntar lo que falte después
+  de agendar.
+- **Q-06** SI el cliente no da ni personas ni ventas, ENTONCES Luna DEBE pedirle con amabilidad al
+  menos uno de los dos, explicándole para qué sirve.
+- **Q-06a** SI el cliente se niega a dar personas y ventas después de Q-06, ENTONCES Luna NO DEBE
+  agendar y DEBE avisar en `#otros-mensajes`.
 - **Q-07** CUANDO el lead queda en clase C, Luna DEBE agradecer, compartir un artículo del blog que
   sirva para su caso y dejar la puerta abierta, y NO DEBE ofrecer reunión.
 - **Q-08** MIENTRAS el lead es C, CUANDO insiste en tener la reunión, Luna DEBE decirle que el equipo
@@ -301,7 +304,7 @@ Cada entrada lleva un código de origen que se guarda con el lead (D-01).
 |---|---|
 | `#lead-caliente` | H-01 · C-09 |
 | `#agenda` | S-02 (ficha) · A-14, A-15 · S-06 «sin confirmar» · S-09 «no llegó» · S-15 · B-04 |
-| `#otros-mensajes` | G-01 · G-03 · C-07 · Q-08 · E-05 |
+| `#otros-mensajes` | G-01 · G-03 · C-07 · Q-06a · Q-08 · E-05 |
 | `#fallos` | A-10 y cualquier error de un workflow |
 | `#reporte` | N-02 |
 
@@ -389,3 +392,4 @@ de parches. Lo que se hace distinto aquí:
 | 1.5 | 13/10/2026 | Página web: píxeles, medición de visitantes y tablero |
 | 1.6 | 13/10/2026 | Luna se presenta solo con su nombre (C-01); si le preguntan, dice que es una IA (C-01a) |
 | 1.7 | 13/10/2026 | La reunión puede ser en español o en inglés (C-03, C-03a) |
+| 1.8 | 13/10/2026 | Sin personas ni ventas no hay reunión (Q-05, Q-06, Q-06a): se corrige la contradicción entre los dos |
