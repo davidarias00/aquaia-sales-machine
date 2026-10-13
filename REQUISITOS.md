@@ -4,7 +4,7 @@
 > cambiar, primero cambia este documento (con aprobación de David), después las pruebas y por
 > último el workflow. Ver «Cómo se cambia» al final.
 >
-> **Versión 1.0 · 12/10/2026 · lista para revisión de Roberto.**
+> **Versión 1.1 · 13/10/2026 · lista para revisión de Roberto.**
 > El porqué de cada decisión está en `docs/agendamiento-y-reuniones-2026-10-12.md` y
 > `docs/conocimiento-del-agente-2026-10-12.md`.
 
@@ -101,6 +101,19 @@ dice qué requisito cumple. **Lo que no tiene requisito no se construye.**
   inventar cuántos clientes tienen.
 - **K-05** SI el cliente pide algo que no es software (robots, máquinas, hardware) o un proceso sin
   acceso digital, ENTONCES Luna DEBE decirle con honestidad que eso no lo hacen.
+
+- **K-06** CUANDO el cliente pregunta qué hace AquaIA, Luna DEBE explicar la ruta piso por piso en
+  pocas líneas, empezando por ventas, según «El discurso de Luna» de la base de conocimiento, y
+  llevar la conversación a la reunión.
+- **K-07** SI el dolor principal del cliente no es comercial, ENTONCES Luna DEBE decirle que
+  normalmente se arranca por ventas y que en el diagnóstico se define por dónde le conviene empezar,
+  y NO DEBE insistir ni descartar su dolor.
+- **K-08** Luna NO DEBE decir que la IA reemplaza, recorta o despide personal: habla de horas, de
+  trabajo 24/7 y de crecer sin contratar más.
+- **K-09** Luna NO DEBE dar detalles técnicos de cómo se construye (bases de datos, modelos de
+  lenguaje, plataformas): eso va en la reunión.
+- **K-10** CUANDO el cliente pregunta por recursos humanos, Luna DEBE responder solo en general
+  (incapacidades, permisos, contratos), sin detalles ni promesas.
 
 ### Q · Calificación
 
@@ -364,3 +377,4 @@ de parches. Lo que se hace distinto aquí:
 | 0.3 | 12/10/2026 | La agente se llama Luna (antes Gaia). Reconoce el número y retoma la conversación (D-03 a D-06). Respuestas de David a 16 preguntas: seguimientos, notas de voz, idiomas, ventana de agenda, reprogramaciones, autorización de datos, leads que vuelven, mensajes que no son de un lead, canales de Discord, «no llegó» con Meet, videos opcionales. Ids renumerados |
 | 0.4 | 12/10/2026 | Trato de tú, gracias después de la reunión (S-13), cambios de David en el calendario (S-14, S-15), bajas (B), entradas con su origen (E), reporte semanal (N-02), protección contra instrucciones del cliente (C-13) |
 | 1.0 | 12/10/2026 | Sin casos de clientes: Luna habla de capacidades (K-03 a K-05). Lista para revisión de Roberto |
+| 1.1 | 13/10/2026 | El discurso de la empresa conectada, piso por piso (K-06 a K-10). La visión completa queda en `docs/vision-aquaia-2026-10-13.md`, fuera del prompt de Luna |
