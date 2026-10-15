@@ -147,8 +147,27 @@ create table if not exists preguntas_sin_respuesta (
   at       timestamptz not null default now()
 );
 
+-- Webhooks de Discord por canal (N-01). Son secretos: se cargan a mano en el editor SQL de
+-- Supabase, nunca en el repo.
+create table if not exists discord_canales (
+  canal       text primary key check (canal in ('lead-caliente', 'agenda', 'otros-mensajes', 'fallos', 'reporte')),
+  webhook_url text not null
+);
+
+-- Nadie entra por la API pública de Supabase: RLS activo y sin políticas. n8n se conecta
+-- directo a Postgres y el tablero usará su propio rol de solo lectura.
+alter table config                  enable row level security;
+alter table leads                   enable row level security;
+alter table lead_estados            enable row level security;
+alter table reuniones               enable row level security;
+alter table envios                  enable row level security;
+alter table avisos_unicos           enable row level security;
+alter table ultimo_mensaje          enable row level security;
+alter table preguntas_sin_respuesta enable row level security;
+alter table discord_canales         enable row level security;
+
 -- Vistas para el tablero de los socios (D-08). Solo lectura.
-create or replace view v_leads as
+create or replace view v_leads with (security_invoker = true) as
 select l.id, l.creado::date as primer_contacto, l.nombre, l.empresa, l.ciudad, l.pais,
        l.origen, l.clase, l.estado, l.personas_rango,
        case when l.ventas_no_dice then 'prefiere no decir'
@@ -164,7 +183,7 @@ left join lateral (
   order by r.inicio limit 1
 ) r on true;
 
-create or replace view v_agenda as
+create or replace view v_agenda with (security_invoker = true) as
 select r.inicio, r.fin, r.idioma, r.confirmo, r.meet_link,
        l.nombre, l.empresa, l.clase, l.dolor, l.decide, l.chatwoot_conversation_id
 from reuniones r join leads l on l.id = r.lead_id
