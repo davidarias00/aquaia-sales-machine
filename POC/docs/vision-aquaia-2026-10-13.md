@@ -1,7 +1,7 @@
 # La visión de AquaIA: el plan de vuelo (13/10/2026)
 
 > **Documento interno. NO es parte de lo que sabe Luna** y no se carga en su prompt. Lo que Luna
-> puede decir de esto está en `conocimiento-del-agente-2026-10-12.md` («El discurso de Luna»).
+> puede decir de esto está en `docs/knowledge-base/luna.md` en la raíz del repo («El discurso de Luna»).
 > Se separa a propósito: lo que no está en el prompt no se puede filtrar en una conversación.
 
 Contado por David el 13/10/2026.

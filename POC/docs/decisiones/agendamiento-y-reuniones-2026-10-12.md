@@ -2,6 +2,10 @@
 
 **Estado: decidido, no construido.** Decisiones de David en la sesión del 12/10/2026.
 
+> Este documento explica el **porqué**. Lo que manda es `docs/requirements.md` en la raíz del repo:
+> si algo de aquí cambió después (por ejemplo, la cuenta de Google: David va a usar una que permita
+> saber quién se conectó a Meet), gana el documento de requisitos.
+
 ## Qué es este flujo
 
 El botón de WhatsApp de la página web de AquaIA lo atiende un agente de IA. Los clientes son
